@@ -1,10 +1,19 @@
 <script>
     import axios from 'axios';
     import { toast } from '@zerodevx/svelte-toast';
-    let emails
+    
+	import { onMount } from 'svelte';
+
+    let email
+
+	onMount(async () => {
+		const res = await fetch(`https://czq95uqrig.execute-api.us-east-1.amazonaws.com/production/email/list`);
+		email = await res.json();
+	});
+
     async function generarStream (){
-        let json = JSON.stringify({emails})
-        await axios.post('', json,{
+        let json = JSON.stringify({email})
+        await axios.post('https://czq95uqrig.execute-api.us-east-1.amazonaws.com/production/email/add', json,{
             headers: {'Content-Type': 'application/json'}
         })
         .then(response => {
@@ -40,9 +49,9 @@
                     <form on:submit|preventDefault={generarStream} class=" rounded-lg mx-auto">
                         <div class="text-center mb-12">
                             <div class="form-control">
-                                <label for="emails" class="text text-primary mb-6">Ingrese los correos separados por coma </label>
-                                <label for="emails" class="text text-accent mb-6">Ej: juan@gmail.com, pedro@aol.com </label>
-                                <textarea bind:value={emails} id='emails' name="emails" type="email" class="textarea h-24 textarea-bordered"></textarea>
+                                <label for="email" class="text text-primary mb-6">Ingrese los correos separados por coma </label>
+                                <label for="email" class="text text-accent mb-6">Ej: juan@gmail.com, pedro@aol.com </label>
+                                <textarea bind:value={email} id='email' name="email" type="email" class="textarea h-24 textarea-bordered"></textarea>
                             </div>
                             <div class="form-control mt-6">
                                 <button class="btn btn-primary">Guardar lista</button>

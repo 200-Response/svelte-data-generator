@@ -23,7 +23,7 @@
 				viewBox="0 0 24 24"
 				class="w-8 h-8"><path d="M4 6h16M4 12h16M4 18h16" /></svg
 			></button
-		> <a href="/app" on:click={() => (isOpen = false)}>Los 4 Siniestros</a>
+		> <a href="/" on:click={() => (isOpen = false)}>Los 4 Siniestros</a>
 	</div>
 
 	<nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">

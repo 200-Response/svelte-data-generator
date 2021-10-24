@@ -9014,9 +9014,9 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: assets + "/_app/start-38da65b8.js",
+      file: assets + "/_app/start-56e4a77d.js",
       css: [assets + "/_app/assets/start-464e9d0a.css", assets + "/_app/assets/vendor-26d6279f.css"],
-      js: [assets + "/_app/start-38da65b8.js", assets + "/_app/chunks/vendor-df93e8ed.js"]
+      js: [assets + "/_app/start-56e4a77d.js", assets + "/_app/chunks/vendor-df93e8ed.js"]
     },
     fetched: void 0,
     floc: false,
@@ -9095,7 +9095,7 @@ var module_lookup = {
     return dataGenerator;
   })
 };
-var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-cb1983e6.js", "css": ["assets/pages/__layout.svelte-4b8681a3.css", "assets/vendor-26d6279f.css"], "js": ["pages/__layout.svelte-cb1983e6.js", "chunks/vendor-df93e8ed.js"], "styles": [] }, ".svelte-kit/build/components/error.svelte": { "entry": "error.svelte-eda1b53e.js", "css": ["assets/vendor-26d6279f.css"], "js": ["error.svelte-eda1b53e.js", "chunks/vendor-df93e8ed.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-046137a2.js", "css": ["assets/vendor-26d6279f.css"], "js": ["pages/index.svelte-046137a2.js", "chunks/vendor-df93e8ed.js"], "styles": [] }, "src/routes/configMessages.svelte": { "entry": "pages/configMessages.svelte-cd595922.js", "css": ["assets/vendor-26d6279f.css"], "js": ["pages/configMessages.svelte-cd595922.js", "chunks/vendor-df93e8ed.js"], "styles": [] }, "src/routes/dataGenerator.svelte": { "entry": "pages/dataGenerator.svelte-5c54336f.js", "css": ["assets/vendor-26d6279f.css"], "js": ["pages/dataGenerator.svelte-5c54336f.js", "chunks/vendor-df93e8ed.js"], "styles": [] } };
+var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-cb1983e6.js", "css": ["assets/pages/__layout.svelte-4b8681a3.css", "assets/vendor-26d6279f.css"], "js": ["pages/__layout.svelte-cb1983e6.js", "chunks/vendor-df93e8ed.js"], "styles": [] }, ".svelte-kit/build/components/error.svelte": { "entry": "error.svelte-eda1b53e.js", "css": ["assets/vendor-26d6279f.css"], "js": ["error.svelte-eda1b53e.js", "chunks/vendor-df93e8ed.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-046137a2.js", "css": ["assets/vendor-26d6279f.css"], "js": ["pages/index.svelte-046137a2.js", "chunks/vendor-df93e8ed.js"], "styles": [] }, "src/routes/configMessages.svelte": { "entry": "pages/configMessages.svelte-e86a9f80.js", "css": ["assets/vendor-26d6279f.css"], "js": ["pages/configMessages.svelte-e86a9f80.js", "chunks/vendor-df93e8ed.js"], "styles": [] }, "src/routes/dataGenerator.svelte": { "entry": "pages/dataGenerator.svelte-5c54336f.js", "css": ["assets/vendor-26d6279f.css"], "js": ["pages/dataGenerator.svelte-5c54336f.js", "chunks/vendor-df93e8ed.js"], "styles": [] } };
 async function load_component(file) {
   const { entry, css: css2, js, styles } = metadata_lookup[file];
   return {
@@ -9462,9 +9462,9 @@ var index = /* @__PURE__ */ Object.freeze({
 });
 var ConfigMessages = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<section class="${"text-gray-600 body-font relative"}"><div class="${"container px-5 py-24 mx-auto"}"><div class="${"flex flex-col text-center w-full mb-12"}"><h1 class="${"sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"}">Lista de correo</h1></div>
-          <div class="${"lg:w-1/2 md:w-2/3 mx-auto"}"><div class="${"flex flex-wrap -m-2"}"><div class="${"p-2 w-full"}"><div class="${"relative"}"><form class="${"rounded-lg mx-auto"}"><div class="${"text-center mb-12"}"><div class="${"form-control"}"><label for="${"emails"}" class="${"text text-primary mb-6"}">Ingrese los correos separados por coma </label>
-                                <label for="${"emails"}" class="${"text text-accent mb-6"}">Ej: juan@gmail.com, pedro@aol.com </label>
-                                <textarea id="${"emails"}" name="${"emails"}" type="${"email"}" class="${"textarea h-24 textarea-bordered"}">${""}</textarea></div>
+          <div class="${"lg:w-1/2 md:w-2/3 mx-auto"}"><div class="${"flex flex-wrap -m-2"}"><div class="${"p-2 w-full"}"><div class="${"relative"}"><form class="${"rounded-lg mx-auto"}"><div class="${"text-center mb-12"}"><div class="${"form-control"}"><label for="${"email"}" class="${"text text-primary mb-6"}">Ingrese los correos separados por coma </label>
+                                <label for="${"email"}" class="${"text text-accent mb-6"}">Ej: juan@gmail.com, pedro@aol.com </label>
+                                <textarea id="${"email"}" name="${"email"}" type="${"email"}" class="${"textarea h-24 textarea-bordered"}">${""}</textarea></div>
                             <div class="${"form-control mt-6"}"><button class="${"btn btn-primary"}">Guardar lista</button></div></div></form></div></div></div></div></div></section>`;
 });
 var configMessages = /* @__PURE__ */ Object.freeze({
